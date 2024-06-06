@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Hotelzimmer-Buchungssystem</title>
-
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
 
+<form action="#" method="post">
+
+  <label for="zimmertyp">Wählen Sie die Zimmertypen:</label>
+  <select id="zimmertyp" name="zimmertyp[]" multiple>
+    <option value="Einzelzimmer">Einzelzimmer</option>
+    <option value="Doppelzimmer">Doppelzimmer</option>
+    <option value="Suite">Suite</option>
+  </select>
+
+  <br><br>
+
+
+  <fieldset>
+    <legend>Wählen Sie Ihre Zusatzleistungen:</legend>
+    <label><input type="checkbox" name="zusatzleistungen[]" value="Frühstück"> Frühstück</label><br>
+    <label><input type="checkbox" name="zusatzleistungen[]" value="Flughafentransfer"> Flughafentransfer</label><br>
+    <label><input type="checkbox" name="zusatzleistungen[]" value="Spa-Zugang"> Spa-Zugang</label><br>
+  </fieldset>
+
+  <br>
+
+  <input type="submit" value="Buchen">
+</form>
 
 </body>
 </html>
